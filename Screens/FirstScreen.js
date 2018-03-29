@@ -60,7 +60,7 @@ state ={
     const {navigate} = this.props.navigation;
     let images =this.state.images.map((val, key)=>{
       return(
-       <TouchableOpacity onPress={()=>this.props.navigation.navigate("Second",{img:val.img})} key ={key} style={styles.imgwarp}>
+       <TouchableOpacity onPress={()=>this.props.navigation.navigate("Second")} key ={key} style={styles.imgwarp}>
           <ImageElement imgsource={val.img} />
       </TouchableOpacity>
 
